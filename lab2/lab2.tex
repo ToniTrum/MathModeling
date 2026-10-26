@@ -1,0 +1,145 @@
+\documentclass[a4paper,14pt]{extarticle}
+
+\usepackage[left=30mm, right=10mm, top=20mm, bottom=20mm]{geometry}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{tempora}
+\usepackage{type1cm}
+\usepackage{indentfirst}
+
+\usepackage{minted}
+\usepackage{xcolor}
+
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+
+\usepackage{csquotes}
+\usepackage[
+    parentracker=true,
+    backend=biber,
+    style=gost-numeric,
+    sorting=nty
+]{biblatex}
+
+\usepackage[nodisplayskipstretch]{setspace}
+\usepackage[none]{hyphenat}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage[russian]{cleveref}
+\usepackage{bookmark}
+
+\pgfplotsset{compat=1.18}
+
+\onehalfspacing
+\sloppy
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\definecolor{codebg}{rgb}{0.12,0.12,0.14}
+\definecolor{codeframe}{rgb}{0.40,0.40,0.45}
+\definecolor{keywordcolor}{rgb}{0.45,0.65,1.0}
+\definecolor{stringcolor}{rgb}{1.0,0.55,0.45}
+\definecolor{commentcolor}{rgb}{0.55,0.75,0.60}
+\definecolor{textcolor}{rgb}{0.90,0.90,0.90}
+
+\renewcommand{\theFancyVerbLine}{
+	\sffamily\small\color{black}\arabic{FancyVerbLine}
+}
+
+\setminted{
+    bgcolor=codebg,
+	fillcolor=codebg,
+	framesep=1em,
+	frame=single,
+    rulecolor=\color{codeframe},
+    fontsize=\normalsize,
+    baselinestretch=1.1,
+    linenos,
+    numbersep=6pt,
+    tabsize=4,
+    breaklines,
+    breakbytoken,
+	breaksymbolleft={},
+    autogobble,
+    showspaces=false,
+    showtabs=false,
+}
+
+\usemintedstyle{lightbulb}
+\setmintedinline{
+    bgcolor=codebg
+}
+
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@fpsep}{8pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
+
+\newcommand{\circledequals}{\mathbin{\tikz \node[draw,circle,inner sep=1pt] {$=$};}}
+
+\DeclareMathOperator{\sgn}{sgn}
+
+\begin{document}
+    \begin{titlepage}
+		\centering
+		
+		\includegraphics{images/FEFU-logo.jpg}\\
+		МИНИСТЕРСТВО ОБРАЗОВАНИЯ И НАУКИ РОССИЙСКОЙ ФЕДЕРАЦИИ\\
+		Федеральное государственное автономное образовательное учреждение высшего образования\\
+		\textbf{«Дальневосточный федеральный университет»}
+
+		\rule{\linewidth}{0.8mm}\\[0.3cm]
+		
+		\textbf{ИНСТИТУТ МАТЕМАТИКИ И КОМПЬЮТЕРНЫХ ТЕХНОЛОГИЙ}\\
+		\textbf{Кафедра математического и компьютерного моделирования}\\
+		\vspace*{0.9cm}
+		
+		Кулахсзян Сергей Грайрович\\
+        \vspace*{0.3cm}
+
+		ЛАБОРАТОРНАЯ РАБОТА № 1 \\
+        ЗАДАЧА № 8 \\
+		\vspace*{0.5cm}
+
+		\textbf{Задачи на площадь криволинейной трапеции}\\
+		\vspace*{0.5cm}
+
+		Направление подготовки 02.03.01сцт Сквозные цифровые технологии,\\ 
+        бакалавриатская программа «Математика и компьютерные науки»\\ 
+        Очной формы обучения\\
+		\vspace{1.5cm}
+
+		
+		\vfill
+		\centering
+		г. Владивосток\\
+		2026
+	\end{titlepage}
+
+    \tableofcontents
+    \thispagestyle{empty}
+
+	\newpage
+    \pagenumbering{arabic}
+    \setcounter{page}{3}
+    \section{Постановка задачи}
+    
+\end{document}
