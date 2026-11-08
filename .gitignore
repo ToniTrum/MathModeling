@@ -6,7 +6,7 @@
 *.atfi
 *.aux
 *.bak
-*.bbl
+*.bbl*
 *.bcf
 *.blg
 *.brf
