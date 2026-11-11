@@ -7,7 +7,7 @@
 *.aux
 *.bak
 *.bbl*
-*.bcf
+*.bcf*
 *.blg
 *.brf
 *.bst
